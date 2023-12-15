@@ -410,7 +410,9 @@ function displayModules(installationType, driverName, CONSTANTS_PARAM) {
 			$(".storageArrays").show();
 			$(".cluster-prefix").show();
 			$(".port-groups").show();
-			$(".resiliency").hide();
+			if (document.getElementById("csm-version").value === "1.10.0") {
+				$(".resiliency").show();
+			}
 			$(".migration").show();
 			$(".vSphere").show();
 			$(".storage-capacity").show();
@@ -420,12 +422,18 @@ function displayModules(installationType, driverName, CONSTANTS_PARAM) {
 			$(".transport-protocol").show();
 			$(".topology").show();
 			$(".fsGroupPolicy").show();
-			$(".max-volumes-per-node").show();
+			if (document.getElementById("csm-version").value !== "1.8.0") {
+				$(".max-volumes-per-node").show();
+			}
 			document.getElementById("driver-namespace").value = CONSTANTS_PARAM.POWERMAX_NAMESPACE;
 			if (installationType === CONSTANTS_PARAM.OPERATOR) {
 				
 				$(".observability-operator").show();
 				$(".observability").hide();
+				$(".resiliency").hide();
+				if (document.getElementById("csm-version").value === "1.10.0") {
+					$(".resiliency-operator").show();
+				}
 				$(".replication-operator-clusterid").hide();
 				$(".image-repository").hide();
 				$(".cert-manager").hide();
@@ -472,8 +480,8 @@ function displayCommands(releaseNameValue, commandTitleValue, commandNoteValue, 
 	installationType = document.getElementById("installation-type").value
 	var helmChartVersion;
 	switch (csmVersion) {
-		case "1.7.0":
-			helmChartVersion = CONSTANTS.CSM_HELM_V170;
+		case "1.10.0":
+			helmChartVersion = CONSTANTS.CSM_HELM_V1100;
 			break;
 		case "1.8.0":
 			helmChartVersion = CONSTANTS.CSM_HELM_V180;
@@ -482,7 +490,7 @@ function displayCommands(releaseNameValue, commandTitleValue, commandNoteValue, 
 			helmChartVersion = CONSTANTS.CSM_HELM_V190;
 			break;
 		default:
-			helmChartVersion = CONSTANTS.CSM_HELM_V190;
+			helmChartVersion = CONSTANTS.CSM_HELM_V1100;
 			break;
 	}
 	$("#command-text-area").show();
