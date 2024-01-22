@@ -1,7 +1,7 @@
 ---
 title: "CSI Driver installation using Helm"
 linkTitle: "Using Helm"
-weight: 2
+weight: 3
 Description: >
   Installation of CSI Drivers using Helm 
 ---
