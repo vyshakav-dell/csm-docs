@@ -36,15 +36,15 @@ The Container Storage Modules and the required CSI Drivers can each be deployed 
   {{< /card >}}
 {{< /cardpane >}}
 {{< cardpane >}}
-  {{< card header="[Dell Container Storage Module for Observability](../observability/deployment)"
+  {{< card header="[Dell Container Storage Module for Observability](helm/modules/observability/)"
           footer="Installs Observability Module">}}
   CSM for Observability can be deployed either via Helm/CSM operator/CSM for Observability Installer/CSM for Observability Offline Installer
-  [...More on installation instructions](../observability/deployment)
+  [...More on installation instructions](helm/modules/observability/)
   {{< /card >}}
-   {{< card header="[Dell Container Storage Module for Authorization](../authorization/deployment)"
+   {{< card header="[Dell Container Storage Module for Authorization](helm/modules/authorization/)"
           footer="Installs Authorization Module">}}
   CSM Authorization can be installed by using the provided Helm v3 charts on Kubernetes platforms or CSM operator. 
-  [...More on installation instructions](../authorization/deployment)
+  [...More on installation instructions](helm/modules/authorization/)
   {{< /card >}}
 {{< /cardpane >}}
 {{< cardpane >}}
