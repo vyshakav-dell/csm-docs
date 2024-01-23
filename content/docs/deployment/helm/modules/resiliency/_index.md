@@ -1,6 +1,6 @@
 ---
-title: Helm
-linktitle: Helm 
+title: Resiliency
+linktitle: Resiliency 
 weight: 3
 description: >
   Dell Container Storage Modules (CSM) for Resiliency installation

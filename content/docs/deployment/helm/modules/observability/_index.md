@@ -1,7 +1,7 @@
 ---
-title: Helm
-linktitle: Helm
-weight: 3
+title: Observability
+linktitle: Observability
+weight: 4
 description: >
   Dell Container Storage Modules (CSM) for Observability Helm deployment
 ---
