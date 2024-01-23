@@ -29,8 +29,8 @@ The Container Storage Modules and the required CSI Drivers can each be deployed 
    CSM Installation Wizard generates manifest files to install Dell CSI Drivers and supported modules.
    [...More on installation instructions](csminstallationwizard)
   {{< /card >}}
-   {{< card header="[Dell CSI Drivers Installation via offline installer](../csidriver/installation/offline)"
-          footer="[Offline installation for all drivers](../csidriver/installation/offline) [Offline installation with Operator](csmoperator/#offline-bundle-installation-on-a-cluster-without-olm)">}}
+   {{< card header="[Dell CSI Drivers Installation via offline installer](offline/)"
+          footer="[Offline installation for all drivers](offline/) [Offline installation with Operator](csmoperator/#offline-bundle-installation-on-a-cluster-without-olm)">}}
   Both Helm and Dell CSM operator supports offline installation of the Dell CSI Storage Providers via `csi-offline-bundle.sh` or `csm-offline-bundle.sh` script, respectively, by creating a usable package.
    [...More on installation instructions](offline/drivers)
   {{< /card >}}
