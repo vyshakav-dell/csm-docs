@@ -146,13 +146,21 @@ CRDs should be configured during replication prepare stage with repctl as descri
    | ignoreUnresolvableHosts | Allows new host to add to existing export list though any of the existing hosts from the same exports are unresolvable/doesn't exist anymore. | No | false |
    | noProbeOnStart | Define whether the controller/node plugin should probe all the PowerScale clusters during driver initialization | No | false |
    | autoProbe | Specify if automatically probe the PowerScale cluster if not done already during CSI calls | No | true |
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/installation/isilon.md
    | **authorization** | [Authorization](../../../../../deployment/helm/modules/authorization/) is an optional feature to apply credential shielding of the backend PowerScale. | - | - |
+=======
+   | **authorization** | [Authorization](../../../../authorization/deployment) is an optional feature to apply credential shielding of the backend PowerScale. | - | - |
+>>>>>>> main:content/docs/csidriver/installation/helm/isilon.md
    | enabled                  | A boolean that enables/disables authorization feature. If enabled, isiAuthType must be set to 1. |  No      |   false   |
    | proxyHost | Hostname of the csm-authorization server. | No | Empty |
    | skipCertificateValidation | A boolean that enables/disables certificate validation of the csm-authorization proxy server. | No | true |
    | **podmon**               | [Podmon](../../../../../deployment/helm/modules/resiliency/) is an optional feature to enable application pods to be resilient to node failure.  |  -        |  -       |
    | enabled                  | A boolean that enables/disables podmon feature. |  No      |   false   |
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/installation/isilon.md
    | **encryption** | [Encryption](../../../../../deployment/helm/modules/encryption/) is an optional feature to apply encryption to CSI volumes. | - | - |
+=======
+   | **encryption** | [Encryption](../../../../secure/encryption/deployment) is an optional feature to apply encryption to CSI volumes. | - | - |
+>>>>>>> main:content/docs/csidriver/installation/helm/isilon.md
    | enabled        | A boolean that enables/disables Encryption feature. | No | false |
 
    *NOTE:*

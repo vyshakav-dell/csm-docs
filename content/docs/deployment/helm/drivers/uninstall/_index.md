@@ -31,5 +31,9 @@ Options:
 
 ## Uninstall a CSI driver installed via Dell CSM Operator
 
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/uninstall/_index.md
 For uninstalling any CSI drivers deployed by the Dell CSM Operator, refer to instructions [here](../../../../deployment/csmoperator/drivers/#uninstall-csi-driver)
+=======
+For uninstalling any CSI drivers deployed by the Dell CSM Operator, refer to instructions [here](../../deployment/csmoperator/drivers/#uninstall-csi-driver)
+>>>>>>> main:content/docs/csidriver/uninstall/_index.md
 

@@ -10,7 +10,11 @@ The CSI Driver for Dell PowerFlex can be deployed by using the provided Helm v3 
 ## Prerequisites
 
 The following are requirements that must be met before installing the CSI Driver for Dell PowerFlex:
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/installation/powerflex.md
 - Install Kubernetes or OpenShift (see [supported versions](../../../../../csidriver/#features-and-capabilities))
+=======
+- Install Kubernetes or OpenShift (see [supported versions](../../../../csidriver/#features-and-capabilities))
+>>>>>>> main:content/docs/csidriver/installation/helm/powerflex.md
 - Install Helm 3.x
 - Enable Zero Padding on PowerFlex
 - Mount propagation is enabled on container runtime that is being used
@@ -175,7 +179,11 @@ Use the below command to replace or update the secret:
 | allowRWOMultiPodAccess | Setting allowRWOMultiPodAccess to "true" will allow multiple pods on the same node to access the same RWO volume. This behavior conflicts with the CSI specification version 1.3. NodePublishVolume description that requires an error to be returned in this case. However, some other CSI drivers support this behavior and some customers desire this behavior. Customers use this option at their own risk. | Yes | false |
 | enableQuota | A boolean that, when enabled, will set quota limit for a newly provisioned NFS volume. | No | false |
 | externalAccess | Defines additional entries for hostAccess of NFS volumes, single IP address and subnet are valid entries | No | " " |
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/installation/powerflex.md
 | **controller**           | This section allows the configuration of controller-specific parameters. To maximize the number of available nodes for controller pods, see this section. For more details on the new controller pod configurations, see the [Features section](../../../../../features/powerflex#controller-ha) for Powerflex specifics.              | -        | -       |
+=======
+| **controller**           | This section allows the configuration of controller-specific parameters. To maximize the number of available nodes for controller pods, see this section. For more details on the new controller pod configurations, see the [Features section](../../../features/powerflex#controller-ha) for Powerflex specifics.              | -        | -       |
+>>>>>>> main:content/docs/csidriver/installation/helm/powerflex.md
 | volumeNamePrefix | Set so that volumes created by the driver have a default prefix. If one PowerFlex/VxFlex OS system is servicing several different Kubernetes installations or users, these prefixes help you distinguish them. | Yes | "k8s" |
 | controllerCount | Set to deploy multiple controller instances. If the controller count is greater than the number of available nodes, excess pods remain in a pending state. It should be greater than 0. You can increase the number of available nodes by configuring the "controller" section in your values.yaml. For more details on the new controller pod configurations, see the [Features section](../../../../../features/powerflex#controller-ha) for Powerflex specifics. | Yes | 2 |
 | snapshot.enabled | A boolean that enable/disable volume snapshot feature. | No | true |
@@ -205,7 +213,11 @@ Use the below command to replace or update the secret:
 | image | Image for vg snapshotter. | No | " " |
 | **podmon**               | [Podmon](../../../../../deployment/helm/modules/resiliency/) is an optional feature to enable application pods to be resilient to node failure.  |  -        |  -       |
 | enabled                  | A boolean that enables/disables podmon feature. |  No      |   false   |
+<<<<<<< HEAD:content/docs/deployment/helm/drivers/installation/powerflex.md
 | **authorization** | [Authorization](../../../../../deployment/helm/modules/authorization/) is an optional feature to apply credential shielding of the backend PowerFlex. | - | - |
+=======
+| **authorization** | [Authorization](../../../../authorization/deployment) is an optional feature to apply credential shielding of the backend PowerFlex. | - | - |
+>>>>>>> main:content/docs/csidriver/installation/helm/powerflex.md
 | enabled                  | A boolean that enables/disables authorization feature. |  No      |   false   |
 | proxyHost | Hostname of the csm-authorization server. | No | Empty |
 | skipCertificateValidation | A boolean that enables/disables certificate validation of the csm-authorization proxy server. | No | true |
