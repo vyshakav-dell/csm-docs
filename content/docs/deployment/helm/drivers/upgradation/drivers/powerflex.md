@@ -14,7 +14,6 @@ You can upgrade the CSI Driver for Dell PowerFlex using Helm or Dell CSM Operato
 **Steps**
 1. Run `git clone -b v2.9.0 https://github.com/dell/csi-powerflex.git` to clone the git repository and get the v2.9.0 driver.
 2. You need to create secret.yaml with the configuration of your system.
-   Check this section in installation documentation:  [Install the Driver](../../../installation/helm/powerflex#install-the-driver)
 3. Update myvalues file as needed.
 4. Run the `csi-install` script with the option _\-\-upgrade_ by running: 
    ```bash

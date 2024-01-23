@@ -1,7 +1,7 @@
 ---
 title: Offline Installer for modules 
 linktitle: Offline Installer for modules
-weight: 3
+weight: 2
 description: >
   Dell Container Storage Modules (CSM) for Observability Offline Installer
 ---
@@ -11,7 +11,7 @@ The following instructions can be followed when a Helm chart will be installed i
 ## Prerequisites
 
 - Helm 3.x
-- The deployment of one or more [supported](../#supported-csi-drivers) Dell CSI drivers
+- The deployment of one or more Dell CSI drivers
 
 ### Dependencies
 

@@ -87,7 +87,7 @@ Set up Linux multipathing as follows:
 - Ensure that the multipath command for `multipath.conf` is available on all Kubernetes nodes.
 
 ### (Optional) Volume Snapshot Requirements
-  For detailed snapshot setup procedure, [click here.](../../../../../../snapshots/#optional-volume-snapshot-requirements)
+  For detailed snapshot setup procedure, [click here.](../../../../../snapshots/#optional-volume-snapshot-requirements)
 
 ### Volume Health Monitoring
 
